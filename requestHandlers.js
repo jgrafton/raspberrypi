@@ -1,22 +1,28 @@
 var exec = require("child_process").exec;
 
-function start() {
+function start(response) {
     console.log("Request handler 'start' was called.");
     var content = "empty";
 
-    exec("ls -lah", function (error, stdout, stderr) { content = stdout; });
-
-    return content;
+    exec("ls -lah", function (error, stdout, stderr) { 
+      response.writeHead(200, { "Content-type": "text/plain"});
+      response.write(stdout);
+      response.end();      
+    });
 }
 
-function upload() {
+function upload(response) {
     console.log("Request handler 'upload' was called.");
-    return "Hello Upload";
+    response.writeHead(200, {"Content-type": "text/plain"});
+    response.write("Hello Upload");
+    response.end();
 }
 
-function bobthebuilder() {
+function bobthebuilder(response) {
     console.log("YES WE CAN!");
-    return "YES WE CAN!";
+    response.writeHead(200, {"Content-type": "text/plain"});
+    response.write("YES WE CAN!");
+    response.end();
 }
 
 exports.start = start;
