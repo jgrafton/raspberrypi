@@ -1,4 +1,4 @@
 raspberrypi
 ===========
 
-programs for raspberry pi
+Raspberry Pi test code.
