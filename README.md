@@ -1,4 +1,19 @@
-raspberrypi
-===========
+Raspberry Pi Presentation by the Silicon Valley Linux User's Group
+==================================================================
 
-Raspberry Pi test code.
+Introduction
+------------
+
+Raspberry Pi Origin
+-------------------
+
+Raspbian
+--------
+
+XBMC
+----
+
+Directories
+-----------
+
+src - source code used in the presentation
