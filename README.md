@@ -5,12 +5,15 @@ Presented by John Grafton and Markus
 
 Introduction
 ------------
-The Raspberry Pi started 
+The Raspberry Pi began as a project to mimic the effect Acorn's BBC Micro had on children in the early 1980's.  The goal of the project was to create a computer that could be used as a teaching tool to impart the vagaries of computer programming to kids.  
 
 
 Raspberry Pi Origin
 -------------------
 http://en.wikipedia.org/wiki/Raspberry_Pi
+
+Hardware
+--------
 
 
 Raspbian
@@ -27,4 +30,9 @@ Repo Directories
 ----------------
 src - source code used in the presentation
 doc - documents with information on the Raspberry Pi
-pic - pictures and screenshots associated to the talk
+pic - pictures and screen shots associated to the talk
+
+More Information
+----------------
+
+http://www.raspberrypi.org/faqs
