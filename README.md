@@ -10,7 +10,7 @@ The Raspberry Pi began as a project to mimic the effect Acorn's BBC Micro had on
 
 Raspberry Pi Origin
 -------------------
-http://en.wikipedia.org/wiki/Raspberry_Pi
+* http://en.wikipedia.org/wiki/Raspberry_Pi
 
 Hardware
 --------
@@ -18,8 +18,8 @@ Hardware
 
 Raspbian
 --------
-http://www.raspbian.org/ 
-http://arstechnica.com/information-technology/2013/03/how-two-volunteers-built-the-raspberry-pis-operating-system/
+* http://www.raspbian.org/ 
+* http://arstechnica.com/information-technology/2013/03/how-two-volunteers-built-the-raspberry-pis-operating-system/
 
 
 XBMC
@@ -28,11 +28,11 @@ XBMC
 
 Repo Directories
 ----------------
-src - source code used in the presentation
-doc - documents with information on the Raspberry Pi
-pic - pictures and screen shots associated to the talk
+* src - source code used in the presentation
+* doc - documents with information on the Raspberry Pi
+* pic - pictures and screen shots associated to the talk
 
 More Information
 ----------------
 
-http://www.raspberrypi.org/faqs
+* http://www.raspberrypi.org/faqs
