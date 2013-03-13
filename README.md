@@ -5,11 +5,31 @@ raspberry pi talk and demo
 
 introduction
 ------------
-The Raspberry Pi began as a project to mimic the effect Acorn's BBC Micro had on children in the early 1980's.  The goal of the project was to create a computer that could be used as a teaching tool to impart the vagaries of computer programming to kids.  
+The Raspberry Pi began as a project to mimic the effect Acorn's BBC Micro had on children in the early 1980's.  The goal of the project was to create a computer that could be used as a teaching tool to impart the vagaries of computer programming to kids. 
+
+Acorn originally developed the ARM processor and the RISC OS. 
 
 
-raspberry pi hardware
----------------------
+raspberry pi hardware (model b)
+-------------------------------
+* SoC: Broadcom BCM2835 (CPU, GPU, DSP, SDRAM, and single USB port)
+* CPU: 700 MHz ARM1176JZF-S core (ARM11 family)
+* GPU: Broadcom VideoCore IV
+* Memory: 512 MB (shared with GPU)
+* USB 2.0: 2 (via the built in integrated 3-port USB hub)
+* Video 1: Composite RCA (PAL and NTSC)
+* Video 2: HDMI (rev 1.3 and 1.4)
+* Video 3: Raw LCD Panels via DSI (Display Serial Interface)
+* Audio 1: 3.5 mm jack
+* Audio 2: HDMI
+* Storage: SD / MMC / SDIO card slot
+* Network: 10/100 Ethernet 
+* Bus 1: UART
+* Bus 2: I2C
+* Bus 3: SPI
+* Power rating: 700mA (3.5W)
+* Power source: 5 volt via MicroUSB or GPIO header
+
 
 where you can buy a raspberry pi
 --------------------------------
