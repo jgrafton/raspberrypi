@@ -8,22 +8,17 @@ introduction
 The Raspberry Pi began as a project to mimic the effect Acorn's BBC Micro had on children in the early 1980's.  The goal of the project was to create a computer that could be used as a teaching tool to impart the vagaries of computer programming to kids.  
 
 
-hardware
---------
+raspberry pi hardware
+---------------------
 
-
-#### Links
-[Raspberry Pi Wiki Entry](http://en.wikipedia.org/wiki/Raspberry_Pi)
-
-
-where can you buy a Raspberry Pi?
----------------------------------
+where you can buy a raspberry pi
+--------------------------------
 * Element 14
 * MCM Electronics in Dayton Ohio
 
 
-what hardware you need to get started?
---------------------------------------
+what hardware you need to get started
+-------------------------------------
 * a computer with an ethernet card and SD card writer
 * SD card 2GB or greater
 * (optional) a screen with an HDMI input
@@ -32,7 +27,7 @@ what hardware you need to get started?
 * (optional) a USB hub
 
 
-how to install Raspbian Linux
+how to install raspbian linux
 -----------------------------
 ### Download the Raspbian Image (link below)
 #### Linux
@@ -50,42 +45,30 @@ Find SD card and unmount it.
 
 Write the image to the SD card.  WARNING, this will destroy all data on the disk!
 
-Normal dd
-	sudo if=2013-02-09-wheezy-raspbian.img of=/dev/rdisk1 bs=1m
+Normal `sudo if=2013-02-09-wheezy-raspbian.img of=/dev/rdisk1 bs=1m`
+Fancy `dd if=2013-02-09-wheezy-raspbian.img bs=1m | pv -s 1800m | sudo dd of=/dev/rdisk2 bs=1m`
 
-Fancy dd
-	dd if=2013-02-09-wheezy-raspbian.img bs=1m | pv -s 1800m | sudo dd of=/dev/rdisk2 bs=1m
-
-
-#### Linux
+Linux `sudo if=2013-02-09-wheezy-raspbian.img of=/dev/sdb bs=1m`
 
 
-#### Links
-[Raspberry Pi Downloads](http://www.raspberrypi.org/downloads)
-[Raspbian Linux](http://www.raspbian.org/)
-[How Two Volunteers Built the Raspberry Pi Operating System](http://arstechnica.com/information-technology/2013/03/how-two-volunteers-built-the-raspberry-pis-operating-system/)
-
-
-what to do with it once Linux is installed?
--------------------------------------------
+what to do with it once linux is installed
+------------------------------------------
 * robots!
 * learn to program!
 * make an LED blink!
 * learn to solder
 
-how to use RPi as a media center running XBMC
----------------------------------------------
-
-
-
-
-xbox media center
------------------
+how to use raspberry pi as a media center running xbox media center
+-------------------------------------------------------------------
 
 
 raspberry pi links
 ------------------
-[RPi FAQs](http://www.raspberrypi.org/faqs)
+* [Raspberry Pi Wiki Entry](http://en.wikipedia.org/wiki/Raspberry_Pi)
+* [Raspberry Pi FAQs](http://www.raspberrypi.org/faqs)
+* [Raspberry Pi Downloads](http://www.raspberrypi.org/downloads)
+* [Raspbian Linux](http://www.raspbian.org/)
+* [How Two Volunteers Built the Raspberry Pi Operating System](http://arstechnica.com/information-technology/2013/03/how-two-volunteers-built-the-raspberry-pis-operating-system/)
 
 
 about the code repository
