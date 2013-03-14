@@ -80,8 +80,27 @@ Awesome (w/ progress meter) [[6]](http://www.ivarch.com/programs/pv.shtml)
     sudo if=2013-02-09-wheezy-raspbian.img of=/dev/sdb bs=1m
 
 ### Boot the Raspberry Pi
+There are two methods to proceed with booting your RPi.
 
 
+1) Most folks will want to boot the RPi with a monitor and keyboard connected.  This option requires more equipment but is MUCH easier to troubleshoot if something goes horribly wrong.
+
+2) The more experienced among you may feel confident enough in your SD image to boot the RPi headless on a network that has a DHCP server (many home networks have a DHCP server built into their router / wireless access point.)
+
+For obvious reasons, this is the stage where having an external screen is extremely useful.  If there was an error in the image writing process to your SD card an external display will allow you to see the error and debug it.  Otherwise, you're waiting for the RPi to boot and grab an IP address.  It takes a few minutes so it's a bit nerve racking.
+
+### raspi-config
+__raspi-config__ is used to configure a newly installed Raspberry Pi.  The functions you may find most useful are:
+1) expand\_rootfs
+
+2) change\_pass
+
+3) update
+
+You must be root to run 'raspi-config'.
+
+#### expand\_rootfs
+This is a great way to lose connection to your Raspberry Pi if you chose to boot it headless.  Many times the root fs expansion fails and you are left with a Raspberry Pi that you can no longer connect remotely to.
 
 
 what to do with it once linux is installed and setup
