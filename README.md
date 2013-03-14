@@ -53,19 +53,23 @@ how to install raspbian linux
 -----------------------------
 ### Download the Raspbian Image [[1]](http://www.raspberrypi.org/downloads)
 
-I've found the quickest way to download the Raspberry Pi image is to pull it down through bittorrent.  There are a few good bittorrent clients around but I'm partial to rtorrent.  It's easy to use and runs on both OSX and Linux.
+I've found the quickest way to download the Raspbian image is to pull it down through bittorrent.  Using Bittorrent instead of the direct HTTP link also reduces the amount of load on the Raspberry Pi Foundation's web server.  
 
-__Linux__ `sudo apt-get install rtorrent`
+There are a few good bittorrent clients around but I'm partial to rtorrent.  It's easy to use and runs on both OSX and Linux.
 
-__OSX__ `brew install rtorrent`
+__Linux rtorrent install__ `$ sudo apt-get install rtorrent`
+
+__OSX rtorrent install__ `$ brew install rtorrent` [[7]](http://mxcl.github.com/homebrew/)
 
 Fire up rtorrent to download the image.
 
-	rtorrent ./2013-02-09-wheezy-raspbian.zip.torrent
+	$ rtorrent ./2013-02-09-wheezy-raspbian.zip.torrent
 
 Once the image is downloaded, unzip it.
 
-    unzip 2013-02-09-wheezy-raspbian.zip
+    $ unzip 2013-02-09-wheezy-raspbian.zip
+    Archive:  2013-02-09-wheezy-raspbian.zip
+      inflating: 2013-02-09-wheezy-raspbian.img 
 
 ### Write the Image to the SD Card
 #### OSX
@@ -154,7 +158,7 @@ raspberry pi links
 * [4] [Raspberry Pi FAQs](http://www.raspberrypi.org/faqs)
 * [5] [How Two Volunteers Built the Raspberry Pi Operating System](http://arstechnica.com/information-technology/2013/03/how-two-volunteers-built-the-raspberry-pis-operating-system/)
 * [6] [Pipe Viewer](http://www.ivarch.com/programs/pv.shtml)
-* [7] [Home Brew](http://mxcl.github.com/homebrew/)
+* [7] [Home Brew](http://mxcl.github.com/homebrew/) - Brew is a great bit of software that sprung to life because if you use MacPorts for very long, it will drive you to drink.  HomeBrew is definitely the missing package manager for OSX!  I highly recommend it.
 
 about the code repository
 -------------------------
