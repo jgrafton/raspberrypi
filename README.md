@@ -51,19 +51,42 @@ what hardware you need to get started
 
 how to install raspbian linux
 -----------------------------
-### Download the Raspbian Image (link below)
-#### Linux
-	sudo apt-get install rtorrent
+### Download the Raspbian Image [[1]](http://www.raspberrypi.org/downloads)
+
+I've found the quickest way to download the Raspberry Pi image is to pull it down through bittorrent.  There are a few good bittorrent clients around but I'm partial to rtorrent.  It's easy to use and runs on both OSX and Linux.
+
+__Linux__ `sudo apt-get install rtorrent`
+
+__OSX__ `brew install rtorrent`
+
+Fire up rtorrent to download the image.
+
 	rtorrent ./2013-02-09-wheezy-raspbian.zip.torrent
 
-#### OSX
-Download the file using either bittorrent or a direct download from the site. [[1]](http://www.raspberrypi.org/downloads)
+Once the image is downloaded, unzip it.
 
-### Write the image
+    unzip 2013-02-09-wheezy-raspbian.zip
+
+### Write the Image to the SD Card
 #### OSX
-Find your SD card in the device list and unmount it.
+In OSX, find your SD card in the device list and unmount it.
 
     diskutil list
+
+    /dev/disk0
+       #:                       TYPE NAME                    SIZE       IDENTIFIER
+       0:      GUID_partition_scheme                        *750.2 GB   disk0
+       1:                        EFI                         209.7 MB   disk0s1
+       2:                  Apple_HFS Macintosh HD            749.3 GB   disk0s2
+       3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+    /dev/disk1
+       #:                       TYPE NAME                    SIZE       IDENTIFIER
+       0:     FDisk_partition_scheme                        *16.1 GB    disk1
+       1:             Windows_FAT_32                         58.7 MB    disk1s1
+       2:                      Linux                         16.1 GB    disk1s2
+
+In this example, my SD card is named /dev/disk1.  We have to unmount this disk in order to write to it.  _Note_ I didn't say eject.  If you logically eject the SD card, you will not be able to write an image to it.
+
     diskutil umountdisk /dev/disk1
 
 Write the image to the SD card.  __WARNING__, this will destroy all data on the disk!
@@ -90,8 +113,18 @@ There are two methods to proceed with booting your RPi.
 
 For obvious reasons, this is the stage where having an external screen is extremely useful.  If there was an error in the image writing process to your SD card an external display will allow you to see the error and debug it.  Otherwise, you're waiting for the RPi to boot and grab an IP address.  It takes a few minutes so it's a bit nerve racking.
 
+### Log into the Raspberry Pi Locally
+
+
+### Log into the Raspberry Pi Remotely
+
+
+### Update Raspbian
+
+
 ### raspi-config
 __raspi-config__ is used to configure a newly installed Raspberry Pi.  The functions you may find most useful are:
+
 1. expand\_rootfs - expand the root file system to fill your SD card.  For example, if you have 16GB SD card and image it with the Raspbian 2GB image, your root filesystem will only be 2GB in size.  expand\_rootfs will expand it to fill the entire 16GB.
 2. change\_pass - change the pi account password
 3. update - update raspi-config
@@ -121,6 +154,7 @@ raspberry pi links
 * [4] [Raspberry Pi FAQs](http://www.raspberrypi.org/faqs)
 * [5] [How Two Volunteers Built the Raspberry Pi Operating System](http://arstechnica.com/information-technology/2013/03/how-two-volunteers-built-the-raspberry-pis-operating-system/)
 * [6] [Pipe Viewer](http://www.ivarch.com/programs/pv.shtml)
+* [7] [Home Brew](http://mxcl.github.com/homebrew/)
 
 about the code repository
 -------------------------
