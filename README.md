@@ -61,41 +61,40 @@ Download the file using either bittorrent or a direct download from the site. [[
 
 ### Write the image
 #### OSX
-Find SD card and unmount it.
-	diskutil list
-	diskutil umountdisk /dev/disk1
+Find your SD card in the device list and unmount it.
 
-Write the image to the SD card.  WARNING, this will destroy all data on the disk!
+    diskutil list
+    diskutil umountdisk /dev/disk1
 
-Normal (dull)
+Write the image to the SD card.  __WARNING__, this will destroy all data on the disk!
+
+__Normal__ (dull)
 
     sudo if=2013-02-09-wheezy-raspbian.img of=/dev/rdisk1 bs=1m
 
-Awesome (w/ progress meter) [[6]](http://www.ivarch.com/programs/pv.shtml)
+__Awesome__ (w/ progress meter) [[6]](http://www.ivarch.com/programs/pv.shtml)
 
     dd if=2013-02-09-wheezy-raspbian.img bs=1m | pv -s 1800m | sudo dd of=/dev/rdisk2 bs=1m
 
-
 #### Linux
+Writing the image using a Linux system is very similiar to OSX.  The only difference is that Linux and OSX device drivers name disk devices differently.  i.e. /dev/rdisk1 vs. /dev/sdb
+
     sudo if=2013-02-09-wheezy-raspbian.img of=/dev/sdb bs=1m
 
 ### Boot the Raspberry Pi
 There are two methods to proceed with booting your RPi.
 
 
-1) Most folks will want to boot the RPi with a monitor and keyboard connected.  This option requires more equipment but is MUCH easier to troubleshoot if something goes horribly wrong.
-
-2) The more experienced among you may feel confident enough in your SD image to boot the RPi headless on a network that has a DHCP server (many home networks have a DHCP server built into their router / wireless access point.)
+1. Most folks will want to boot the RPi with a monitor and keyboard connected.  This option requires more equipment but is MUCH easier to troubleshoot if something goes horribly wrong.
+2. The more experienced among you may feel confident enough in your SD image to boot the RPi headless on a network that has a DHCP server (many home networks have a DHCP server built into their router / wireless access point.)
 
 For obvious reasons, this is the stage where having an external screen is extremely useful.  If there was an error in the image writing process to your SD card an external display will allow you to see the error and debug it.  Otherwise, you're waiting for the RPi to boot and grab an IP address.  It takes a few minutes so it's a bit nerve racking.
 
 ### raspi-config
 __raspi-config__ is used to configure a newly installed Raspberry Pi.  The functions you may find most useful are:
-1) expand\_rootfs
-
-2) change\_pass
-
-3) update
+1. expand\_rootfs - expand the root file system to fill your SD card.  For example, if you have 16GB SD card and image it with the Raspbian 2GB image, your root filesystem will only be 2GB in size.  expand\_rootfs will expand it to fill the entire 16GB.
+2. change\_pass - change the pi account password
+3. update - update raspi-config
 
 You must be root to run 'raspi-config'.
 
