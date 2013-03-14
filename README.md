@@ -1,7 +1,7 @@
 raspberry pi talk and demo
 ==========================
 
-#### Pesented by John Grafton and Markus 
+#### Presented by John Grafton and Markus 
 
 introduction
 ------------
@@ -33,9 +33,11 @@ raspberry pi hardware (model b)
 
 where you can buy a raspberry pi
 --------------------------------
-* Element 14
-* MCM Electronics in Dayton Ohio
+* [MCM Electronics](http://www.mcmelectronics.com/content/en-US/raspberry-pi)
+* [Element 14](http://www.farnell.com/)
+* [RS Components](http://uk.rs-online.com/web/generalDisplay.html?id=raspberrypi)
 
+I bought my RPi's from MCM Electronics and had a very good experience.  They shipped to California within a few days and my RPi's were in good shape.  They ship from Dayton, Ohio.
 
 what hardware you need to get started
 -------------------------------------
@@ -55,7 +57,7 @@ how to install raspbian linux
 	rtorrent ./2013-02-09-wheezy-raspbian.zip.torrent
 
 #### OSX
-	Download the file using either bittorrent or a direct download from the site.  (listed below)
+	Download the file using either bittorrent or a direct download from the site. [1](http://www.google.com/)
 
 ### Write the image
 #### OSX
@@ -65,14 +67,22 @@ Find SD card and unmount it.
 
 Write the image to the SD card.  WARNING, this will destroy all data on the disk!
 
-Normal `sudo if=2013-02-09-wheezy-raspbian.img of=/dev/rdisk1 bs=1m`
-Fancy `dd if=2013-02-09-wheezy-raspbian.img bs=1m | pv -s 1800m | sudo dd of=/dev/rdisk2 bs=1m`
+Normal 
+    sudo if=2013-02-09-wheezy-raspbian.img of=/dev/rdisk1 bs=1m
 
-Linux `sudo if=2013-02-09-wheezy-raspbian.img of=/dev/sdb bs=1m`
+Fancy 
+    dd if=2013-02-09-wheezy-raspbian.img bs=1m | pv -s 1800m | sudo dd of=/dev/rdisk2 bs=1m
+
+#### Linux
+    sudo if=2013-02-09-wheezy-raspbian.img of=/dev/sdb bs=1m
+
+### Boot the Raspberry Pi
 
 
-what to do with it once linux is installed
-------------------------------------------
+
+
+what to do with it once linux is installed and setup
+----------------------------------------------------
 * robots!
 * learn to program!
 * make an LED blink!
@@ -84,10 +94,10 @@ how to use raspberry pi as a media center running xbox media center
 
 raspberry pi links
 ------------------
+* "[1]" [Raspberry Pi Downloads](http://www.raspberrypi.org/downloads)
+* [Raspbian Linux](http://www.raspbian.org/)
 * [Raspberry Pi Wiki Entry](http://en.wikipedia.org/wiki/Raspberry_Pi)
 * [Raspberry Pi FAQs](http://www.raspberrypi.org/faqs)
-* [Raspberry Pi Downloads](http://www.raspberrypi.org/downloads)
-* [Raspbian Linux](http://www.raspbian.org/)
 * [How Two Volunteers Built the Raspberry Pi Operating System](http://arstechnica.com/information-technology/2013/03/how-two-volunteers-built-the-raspberry-pis-operating-system/)
 
 
