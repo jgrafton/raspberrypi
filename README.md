@@ -139,6 +139,18 @@ You must be root to run 'raspi-config'.
 #### expand\_rootfs
 This is a great way to lose connection to your Raspberry Pi if you chose to boot it headless.  Many times the root fs expansion fails and you are left with a Raspberry Pi that you can no longer connect remotely to.
 
+programming
+-----------
+
+### python
+
+Install python-rpi GPIO module
+
+    sudo apt-get install python-rpi.gpio
+    
+### scratch
+Scratch is automatically installed.  It requires a display to use.
+
 
 what to do with it once linux is installed and setup
 ----------------------------------------------------
