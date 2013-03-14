@@ -57,7 +57,7 @@ how to install raspbian linux
 	rtorrent ./2013-02-09-wheezy-raspbian.zip.torrent
 
 #### OSX
-	Download the file using either bittorrent or a direct download from the site. [1](http://www.google.com/)
+Download the file using either bittorrent or a direct download from the site. [[1]](http://www.raspberrypi.org/downloads)
 
 ### Write the image
 #### OSX
@@ -67,11 +67,14 @@ Find SD card and unmount it.
 
 Write the image to the SD card.  WARNING, this will destroy all data on the disk!
 
-Normal 
+Normal (dull)
+
     sudo if=2013-02-09-wheezy-raspbian.img of=/dev/rdisk1 bs=1m
 
-Fancy 
+Awesome (w/ progress meter) [[6]](http://www.ivarch.com/programs/pv.shtml)
+
     dd if=2013-02-09-wheezy-raspbian.img bs=1m | pv -s 1800m | sudo dd of=/dev/rdisk2 bs=1m
+
 
 #### Linux
     sudo if=2013-02-09-wheezy-raspbian.img of=/dev/sdb bs=1m
@@ -94,12 +97,12 @@ how to use raspberry pi as a media center running xbox media center
 
 raspberry pi links
 ------------------
-* "[1]" [Raspberry Pi Downloads](http://www.raspberrypi.org/downloads)
-* [Raspbian Linux](http://www.raspbian.org/)
-* [Raspberry Pi Wiki Entry](http://en.wikipedia.org/wiki/Raspberry_Pi)
-* [Raspberry Pi FAQs](http://www.raspberrypi.org/faqs)
-* [How Two Volunteers Built the Raspberry Pi Operating System](http://arstechnica.com/information-technology/2013/03/how-two-volunteers-built-the-raspberry-pis-operating-system/)
-
+* [1] [Raspberry Pi Downloads](http://www.raspberrypi.org/downloads)
+* [2] [Raspbian Linux](http://www.raspbian.org/)
+* [3] [Raspberry Pi Wiki Entry](http://en.wikipedia.org/wiki/Raspberry_Pi)
+* [4] [Raspberry Pi FAQs](http://www.raspberrypi.org/faqs)
+* [5] [How Two Volunteers Built the Raspberry Pi Operating System](http://arstechnica.com/information-technology/2013/03/how-two-volunteers-built-the-raspberry-pis-operating-system/)
+* [6] [Pipe Viewer](http://www.ivarch.com/programs/pv.shtml)
 
 about the code repository
 -------------------------
