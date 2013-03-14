@@ -95,9 +95,13 @@ In this example, my SD card is named /dev/disk1.  We have to unmount this disk i
 
 Write the image to the SD card.  __WARNING__, this will destroy all data on the disk!
 
-__Normal__ `$ sudo if=2013-02-09-wheezy-raspbian.img of=/dev/rdisk1 bs=1m`
+__Normal__ 
 
-__Awesome__ (w/ progress meter) [[6]](http://www.ivarch.com/programs/pv.shtml) `dd if=2013-02-09-wheezy-raspbian.img bs=1m | pv -s 1800m | sudo dd of=/dev/rdisk2 bs=1m`
+	$ sudo if=2013-02-09-wheezy-raspbian.img of=/dev/rdisk1 bs=1m
+
+__Awesome__ (w/ progress meter) [[6]](http://www.ivarch.com/programs/pv.shtml) 
+
+	dd if=2013-02-09-wheezy-raspbian.img bs=1m | pv -s 1800m | sudo dd of=/dev/rdisk2 bs=1m
 
 
 #### Linux
