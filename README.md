@@ -5,9 +5,11 @@ raspberry pi talk and demo
 
 introduction
 ------------
-The Raspberry Pi began as a project to mimic the effect Acorn's BBC Micro had on children in the early 1980's.  The goal of the project was to create a computer that could be used as a teaching tool to impart the vagaries of computer programming to kids. 
+Raspberry Pi was a project born of the minds of Eben Upton and David Braben, a man perhaps best known for his creation with Ian Bell of the classic BBC model B space adventure Elite, Raspberry Pi has a simple premise: “It’s a project to make a very cheap computer,” Upton explained. “A  computer for $25 without networking – the Model A-  or $35 with – the Model B.” [[8]](http://www.linuxuser.co.uk/features/raspberry-pi-interview-eban-upton-reveals-all)
 
-Acorn originally developed the ARM processor and the RISC OS. 
+The Raspberry Pi began life as a project to teach children computer programming without being distracted by Facebook and Twitter.
+
+The ARM architecture along with RISC OS were originally developed by Acorn Computers Ltd. to power their desktop machines in the 1980's.  The BBC Micro model B is considered their most popular.  ARM was spun off as a separate company to develop the processors further.  ARM does not manufacture their own processors.  They license their architecture to other semi-conductor manufacturers.
 
 
 raspberry pi hardware (model b)
@@ -43,11 +45,13 @@ what hardware you need to get started
 -------------------------------------
 * a computer with an ethernet card and SD card writer
 * SD card 2GB or greater
+* ethernet cable
+* 5v micro USB power adapter that can provide at least 1A of power
 * (optional) a screen with an HDMI input
+* (optional) a screen with a composite
 * (optional) a USB keyboard
 * (optional) a USB mouse
 * (optional) a USB hub
-
 
 how to install raspbian linux
 -----------------------------
@@ -165,13 +169,16 @@ how to use raspberry pi as a media center running xbox media center
 
 raspberry pi links
 ------------------
-* [1] [Raspberry Pi Downloads](http://www.raspberrypi.org/downloads)
-* [2] [Raspbian Linux](http://www.raspbian.org/)
-* [3] [Raspberry Pi Wiki Entry](http://en.wikipedia.org/wiki/Raspberry_Pi)
-* [4] [Raspberry Pi FAQs](http://www.raspberrypi.org/faqs)
-* [5] [How Two Volunteers Built the Raspberry Pi Operating System](http://arstechnica.com/information-technology/2013/03/how-two-volunteers-built-the-raspberry-pis-operating-system/)
-* [6] [Pipe Viewer](http://www.ivarch.com/programs/pv.shtml)
-* [7] [Home Brew](http://mxcl.github.com/homebrew/) - Brew is a great bit of software that sprung to life because if you use MacPorts for very long, it will drive you to drink.  HomeBrew is definitely the missing package manager for OSX!  I highly recommend it.
+* \[1\] [Raspberry Pi Downloads](http://www.raspberrypi.org/downloads)
+* \[2\] [Raspbian Linux](http://www.raspbian.org/)
+* \[3\] [Raspberry Pi Wiki Entry](http://en.wikipedia.org/wiki/Raspberry_Pi)
+* \[4\] [Raspberry Pi FAQs](http://www.raspberrypi.org/faqs)
+* \[5\] [How Two Volunteers Built the Raspberry Pi Operating System](http://arstechnica.com/information-technology/2013/03/how-two-volunteers-built-the-raspberry-pis-operating-system/)
+* \[6\] [Pipe Viewer](http://www.ivarch.com/programs/pv.shtml)
+* \[7\] [Home Brew](http://mxcl.github.com/homebrew/) - Brew is a great bit of software that sprung to life because if you use MacPorts for very long, it will drive you to drink.  HomeBrew is definitely the missing package manager for OSX!  I highly recommend it.
+* \[8\] [Raspberry Pi interview: Eben Upton reveals all](http://www.linuxuser.co.uk/features/raspberry-pi-interview-eban-upton-reveals-all)
+* \[9\] [Eben Upton Keynote at PyCon](http://www.raspberrypi.org/archives/3508)
+* \[10\] [Raspberry Pi Verified Peripherals](http://elinux.org/RPi_VerifiedPeripherals)
 
 about the code repository
 -------------------------
@@ -193,6 +200,13 @@ This talk will cover the Raspberry Pi's short history and briefly touch on the e
 * How to use RPi as a media center running XBMC.
 
 We will also *attempt* to demo many of the things we talk about.
+
+talk hardware requirements
+--------------------------
+* grafton Rpi
+* markus Rpi
+* ethernet cable
+
 
 john grafton bio
 ----------------
