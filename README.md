@@ -3,11 +3,61 @@ raspberry pi talk and demo
 
 #### Presented by John Grafton and Markus 
 
+<pre>
+
+Linux raspberrypi 3.6.11+ #371 PREEMPT Thu Feb 7 16:31:35 GMT 2013 armv6l
+
+
+     :||220$00$$211'        '112$$00$0221|:           
+  '00802$22112122$$802'   1080$22211122$2$800:        
+  |&0111111111111111108::881111111111111111$&1        
+  :&8111111122111111110888111111112221111110&;        
+   1&$111111112$$211112&&$11112$$2111111112&2         
+    2&$1111111111200228&&&$2$0$111111111128$          
+     18821111111111$&&&&&&&&811111111112081           
+      '108$21111120&&&&&&&&&&021111122801:            
+        '$&&8$$$8&&8$11||11$8&&80008&&$:              
+       28$1;:'';0&1:' '''' ':181:::;12882'            
+     :88;'  ';2&&8;' ''''''  :8&$|'   :2&8:           
+     $&;  :1$&&&&&&021||||112088&&01:' '$&0           
+     &8;|28&821;::;12&&&&&81;::::;108$1:1&&:          
+   ;0&8&&&&1: '''''' ;0&&0: '''''' '|8&&88&0|         
+ '081;:$&&1 ''''''''' 1&&1 ''''''''' ;8&|';$&0:       
+ 88; ' 1&$''''''''''' 1&&2 '''''''''' 28:'''1&8:      
+1&1 '' 2&0'''''''''' ;8&&&1'''''''''''0&:''''8&2      
+1&1 '':8&&2: '''' ':1&&&&&&$|''    ':2&&1 '':8&2      
+'88;  2&&&&821||11$0$1|;;;1208$1112$&&&&&; '2&&:      
+ :0822&0008&&&&&&&2:' ''''' '|8&&&&&821|1020&0:       
+   8&&1''':|$&&&&2 '''''''''' ;&&&0|: '' |&&8'        
+   ;&8:'''''';$&&1 ''''''''''':8&1''''''':8&|         
+    $&1 '''''''2&8; '''''''' '2&| '''''' |&0          
+    '0&1''''''':8&&2;:'''':;10&$ '''''''|88:          
+      2&$1:'''';8&&&&&00008&&&&$'  '':|$&2'           
+       '1$00$$$8&&0211||||112$8&02220001:             
+           |28&&&2'   '''''   2&&&8$|                 
+              :128$1;''''':;10&21:                    
+                 '1$00$$$$08$1'                       
+                     ':;;:'
+
+HOSTNAME : raspberrypi
+DOMAIN   : hsd1.ca.comcast.net.
+OS       : Debian 7.0
+KERNEL   : Linux 3.6.11+ version 3.6.11+
+# PROCS  : 1
+RAM      : 184.45 MB
+MAC      : b8:27:eb:df:3a:f8
+IP       : 192.168.1.64
+VIRTUAL  : physical
+Last login: Sun Mar 24 03:05:36 2013 from pod.tino
+jgrafton@raspberrypi ~ $
+
+</pre>
+
 introduction
 ------------
 Raspberry Pi was a project born of the minds of Eben Upton and David Braben, a man perhaps best known for his creation with Ian Bell of the classic BBC model B space adventure Elite, Raspberry Pi has a simple premise: “It’s a project to make a very cheap computer,” Upton explained. “A  computer for $25 without networking – the Model A-  or $35 with – the Model B.” [[8]](http://www.linuxuser.co.uk/features/raspberry-pi-interview-eban-upton-reveals-all)
 
-The Raspberry Pi began life as a project to teach children computer programming without being distracted by Facebook and Twitter.
+The Raspberry Pi began life as a project to teach children computer programming while not being distracted by Facebook and Twitter.
 
 The ARM architecture along with RISC OS were originally developed by Acorn Computers Ltd. to power their desktop machines in the 1980's.  The BBC Micro model B is considered their most popular.  ARM was spun off as a separate company to develop the processors further.  ARM does not manufacture their own processors.  They license their architecture to other semi-conductor manufacturers.
 
@@ -203,9 +253,10 @@ We will also *attempt* to demo many of the things we talk about.
 
 talk hardware requirements
 --------------------------
-* grafton Rpi
-* markus Rpi
-* ethernet cable
+* grafton Rpi (power, ethernet cable, SD card)
+* markus Rpi (power, SD card)
+* display
+* mini-dv to VGA converter for mac
 
 
 john grafton bio
