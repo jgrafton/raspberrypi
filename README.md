@@ -1,7 +1,7 @@
 raspberry pi talk and demo
 ==========================
 
-#### Presented by John Grafton and Markus 
+#### Presented by John, Markus, and Nathan 
 
 <pre>
 
@@ -38,18 +38,6 @@ Linux raspberrypi 3.6.11+ #371 PREEMPT Thu Feb 7 16:31:35 GMT 2013 armv6l
               :128$1;''''':;10&21:                    
                  '1$00$$$$08$1'                       
                      ':;;:'
-
-HOSTNAME : raspberrypi
-DOMAIN   : hsd1.ca.comcast.net.
-OS       : Debian 7.0
-KERNEL   : Linux 3.6.11+ version 3.6.11+
-# PROCS  : 1
-RAM      : 184.45 MB
-MAC      : b8:27:eb:df:3a:f8
-IP       : 192.168.1.64
-VIRTUAL  : physical
-Last login: Sun Mar 24 03:05:36 2013 from pod.tino
-jgrafton@raspberrypi ~ $
 
 </pre>
 
@@ -147,7 +135,7 @@ In this example, my SD card is named /dev/disk1.  We have to unmount this disk i
 
     diskutil umountdisk /dev/disk1
 
-Write the image to the SD card.  __WARNING__, this will destroy all data on the disk!
+Write the image to the SD card.  __WARNING__, this will destroy all data on the SD card!
 
 __Normal__ 
 
@@ -173,25 +161,51 @@ There are two methods to proceed with booting your RPi.
 For obvious reasons, this is the stage where having an external screen is extremely useful.  If there was an error in the image writing process to your SD card an external display will allow you to see the error and debug it.  Otherwise, you're waiting for the RPi to boot and grab an IP address.  It takes a few minutes so it's a bit nerve racking.
 
 ### Log into the Raspberry Pi Locally
+Plug your monitor / TV into the RPi's HDMI or composite port and power it on.  After a few moments, you should see the RPi logo appear in the upper lefthand corner of the screen while the RPi boots up.
 
+Once the RPi has finished booting, you will be greeted with a login prompt.  Login in with:
+
+Username: __pi__
+Password: __raspberry__
 
 ### Log into the Raspberry Pi Remotely
+By default, the RPi attempts to configure an IP using DHCP during boot up.  You can take advantage of this by attaching the RPi to your home network and watching your home network DHCP server (probably your home wireless router) for new IP addess allocations while the RPi boots.
 
+For example, if you see your router has allocated the IP address 192.168.1.50, attempt to SSH into the RPi with (from OSX or Linux):
 
-### Update Raspbian
+    ssh pi@192.168.1.50
 
+Again, the password is __raspberry__.
 
-### raspi-config
+The great thing about using the RPi this way is that *should* be able to access the internet from the RPi.  This is very useful for installing new packages and updating the RPi with the lastest Raspbian packages.
+
+### Installing Packages and Updating Raspbian
+Luckily for us (or unluckily depending on your perspecitve) Mike Thompson [[5]](http://arstechnica.com/information-technology/2013/03/how-two-volunteers-built-the-raspberry-pis-operating-system/) originally chose to develop a Debian based distribution for the RPi.  That makes updating the RPi a cinch if you've got it to connect to the internet.  All of your friendly Debian installation and update tools are there to help you configure the system the way you like it.
+
+  apt-cache search python
+  apt-get install python
+  apt-get update
+  apt-get dist-upgrade 
+
+### Start X11
+The RPi has a full blown version of X11 installed.  You can start it with startx just like a normal debian installation.
+
+    startx
+
+### Configuring the Pi
+
 __raspi-config__ is used to configure a newly installed Raspberry Pi.  The functions you may find most useful are:
 
 1. expand\_rootfs - expand the root file system to fill your SD card.  For example, if you have 16GB SD card and image it with the Raspbian 2GB image, your root filesystem will only be 2GB in size.  expand\_rootfs will expand it to fill the entire 16GB.
+
 2. change\_pass - change the pi account password
+
 3. update - update raspi-config
 
 You must be root to run 'raspi-config'.
 
-#### expand\_rootfs
-This is a great way to lose connection to your Raspberry Pi if you chose to boot it headless.  Many times the root fs expansion fails and you are left with a Raspberry Pi that you can no longer connect remotely to.
+__a note about expand\_rootfs__
+This is a great way to lose connection to your Raspberry Pi if you chose to boot it headless.  Sometimes the root fs expansion fails and you are left with a Raspberry Pi that you can no longer connect remotely to.  It's best to do this right after you've imaged an SD card so if something goes wrong, you don't lose any data.
 
 programming
 -----------
@@ -229,6 +243,7 @@ raspberry pi links
 * \[8\] [Raspberry Pi interview: Eben Upton reveals all](http://www.linuxuser.co.uk/features/raspberry-pi-interview-eban-upton-reveals-all)
 * \[9\] [Eben Upton Keynote at PyCon](http://www.raspberrypi.org/archives/3508)
 * \[10\] [Raspberry Pi Verified Peripherals](http://elinux.org/RPi_VerifiedPeripherals)
+* \[11\] [Gertboard](http://www.mcmelectronics.com/product/RASPBERRY-PI-/83-14460)
 
 about the code repository
 -------------------------
