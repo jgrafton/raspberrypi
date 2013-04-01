@@ -215,10 +215,30 @@ programming
 Install python-rpi GPIO module
 
     sudo apt-get install python-rpi.gpio
+
+### ruby
+
+Install *wiringpi* gem for ruby GPIO support
+
+    sudo gem install wiringpi 
     
 ### scratch
-Scratch is automatically installed.  It requires a display to use.
+Scratch comes with Raspbian.  It requires a display to use.
 
+    ./scratch
+
+### GPIO examples
+In the *src* directory of this repository are several examples of scripts / programs that blink an LED on GPIO 21 (or 27).  This is done by turning on and off pin 21 (27 on newer Pi's) at 1 second intervals.  The examples are in Python, Ruby, C, and Bash.
+
+All of the examples write to /dev/mem and need to be run as root.
+
+    sudo ./led_blink.py
+
+To use the example in C, you must install gcc and compile it first.
+
+    sudo apt-get install gcc
+    gcc led_blink_gpio_mmap.c -o led_blink_gpio_mmap
+    sudo ./led_blink_gpio_mmap
 
 what to do with it once linux is installed and setup
 ----------------------------------------------------
