@@ -29,6 +29,7 @@ GPIO.setup(21, GPIO.OUT)
 GPIO.output(21, GPIO.HIGH)
 
 # print instructions to user
+print 'GPIO LED Blink Example - Python'
 print 'LED should be blinking.  Press Ctrl-C to stop.'
 
 # loop forever until user presses Ctrl-C
