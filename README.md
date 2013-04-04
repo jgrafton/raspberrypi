@@ -264,6 +264,7 @@ raspberry pi links
 * \[9\] [Eben Upton Keynote at PyCon](http://www.raspberrypi.org/archives/3508)
 * \[10\] [Raspberry Pi Verified Peripherals](http://elinux.org/RPi_VerifiedPeripherals)
 * \[11\] [Gertboard](http://www.mcmelectronics.com/product/RASPBERRY-PI-/83-14460)
+* \[12\] [Raspberry Pi Verified SD Cards](http://elinux.org/RPi_SD_cards)
 
 about the code repository
 -------------------------
